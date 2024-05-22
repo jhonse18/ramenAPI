@@ -9,6 +9,12 @@ const recetaSchema = new mongoose.Schema({
         type: mongoose.Schema.ObjectId,
         ref: 'users'
     },
+    users:[
+        {
+            type: mongoose.Schema.ObjectId,
+            ref: 'users'
+        }
+    ]
     
 });
 
