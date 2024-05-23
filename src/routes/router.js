@@ -11,6 +11,6 @@ router.get("/",(req,res)=>{
     res.json({data:"hello api"});
 })
 router.use("/users",userRouter);
-router.use("/recetas",recetaRouter);
+router.use("/recetas",isAuthenticated,recetaRouter);
 router.use("/",authRouter);
 export default router

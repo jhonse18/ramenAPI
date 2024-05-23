@@ -24,7 +24,7 @@ describe("Test de recetaController",()=>{
         await mongoose.connection.close();
     })
 
-    test("Crear proyecto",async()=>{
+    test("Crear receta",async()=>{
         const users = await userController.getAll();
         console.log("usuario",users[0])
         const recetaData = {
